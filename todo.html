@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>やったことリスト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header">
+    <h1 class="site-title">期末面談用やったことリスト</h1>
+  </header>
+
+  <main>
+    <div class="inputarea">
+      <p>実施月、タスク名、タスク概要、進捗を入力してください</p>
+      <div class="row">
+        <button id="save">保存</button>
+        <button id="load">読込</button>
+      </div>
+      <div class="row">
+        <input id="taskmonth" type="month" placeholder="実施月">
+        <select id="taskstatus">
+          <option value="済">済</option>
+          <option value="進行中">進行中</option>
+          <option value="未着手">未着手</option>
+        </select>
+        <button id="submit">登録</button>
+      </div>
+      <div class="row">
+        <input id="tasktitle" type="text" placeholder="タイトル">
+      </div>
+      <div class="row">
+        <textarea id="taskdetail" rows="5" placeholder="タスクの概要"></textarea>
+      </div>
+    </div>
+    <div class="taskarea">
+      <table id="tasktable">
+        <tr>
+          <th>実施月</th>
+          <th>進捗</th>
+          <th>タスク名</th>
+          <th>タスク概要</th>
+          <th>削除</th>
+        </tr>
+      </table>
+    </div>
+  </main>
+  <script src="todo.js"></script>
+</body>
+</html>

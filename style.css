@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* 全体 */
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+  padding: 3px;
+  border: 2px solid #888;
+}
+
+button{
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+body {
+  width: 800px;
+  margin: 0 auto;
+  font-family : sans-serif; 
+  background-color: rgba(22, 78, 11, 0.089);
+}
+
+#header h1 {
+  text-align: center;
+}
+
+/* input-area */
+.inputarea {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.inputarea .row {
+  margin: 10px 0;
+}
+
+.inputarea button {
+  font-size:1.2em;
+  padding: 3px 20px;
+}
+
+.inputarea #save,#load {
+  background-color: #844;
+}
+
+.inputarea #submit {
+  background-color: #44f;
+}
+
+#tasktitle, #taskdetail {
+  width: 500px;
+}
+
+/* tasklist */
+#tasktable {
+  min-width: 800px;
+  margin: 0 auto;  
+}
+
+#tasktable th {
+  background-color: rgb(16, 105, 105);
+  color: #fff;
+}
+
+#tasktable button {
+  display: block;  
+  margin: 0 auto;  
+  background-color: #444;
+}
+
